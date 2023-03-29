@@ -38,7 +38,7 @@ def plot_waveform_and_play_audio(mp3_url):
     # Play the audio
     display(Audio(data=y, rate=sr))
 
-plot_waveform_and_play_audio('https://github.com/mlmstdt/Mapping-radio/raw/main/Testradio.mp3')
+plot_waveform_and_play_audio('https://github.com/mlmstdt/Mapping-radio/raw/main/media/Testradio.mp3')
 
 
 Hermeneutics 3
@@ -67,7 +67,7 @@ def plot_power_spectrum(mp3_url, frame_length=2048, hop_length=512):
     plt.close()
     display(Image(filename='power_spectrum.png'))
 
-plot_power_spectrum('https://github.com/mlmstdt/Mapping-radio/raw/main/Testradio.mp3')
+plot_power_spectrum('https://github.com/mlmstdt/Mapping-radio/raw/main/media/Testradio.mp3')
 
 
 Hermeneutics 4
@@ -100,7 +100,7 @@ def plot_waveform_with_onsets(mp3_url):
     plt.close()
     display(Image(filename='waveform_with_onsets.png'))
 
-plot_waveform_with_onsets('https://github.com/mlmstdt/Mapping-radio/raw/main/Testradio.mp3')
+plot_waveform_with_onsets('https://github.com/mlmstdt/Mapping-radio/raw/main/media/Testradio.mp3')
 
 
 
@@ -134,7 +134,7 @@ def visualize_mfcc(mp3_url):
     # Display the saved image
     display(Image(filename='normalized_mfcc_bands.png'))
 
-visualize_mfcc('https://github.com/mlmstdt/Mapping-radio/raw/main/Testradio.mp3')
+visualize_mfcc('https://github.com/mlmstdt/Mapping-radio/raw/main/media/Testradio.mp3')
 
 
 Hermeneutics 6
@@ -189,7 +189,7 @@ def analyze_audio(mp3_url):
     # Display the saved image
     display(Image(filename='audio_analysis.png'))
 
-analyze_audio('https://github.com/mlmstdt/Mapping-radio/raw/main/Testradio.mp3')
+analyze_audio('https://github.com/mlmstdt/Mapping-radio/raw/main/media/Testradio.mp3')
 
 
 Hermeneutics 7
@@ -251,13 +251,13 @@ def analyze_audio(mp3_url, threshold, similarity_threshold):
     # Display the saved image
     display(Image(filename='analysis_plot.png'))
 
-analyze_audio('https://github.com/mlmstdt/Mapping-radio/raw/main/Testradio.mp3', 0.15, 1.5)
+analyze_audio('https://github.com/mlmstdt/Mapping-radio/raw/main/media/Testradio.mp3', 0.15, 1.5)
 
 
 Hermeneutics 8
 import pandas as pd
 
-df = pd.read_csv("https://github.com/mlmstdt/Mapping-radio/raw/main/audio_featuresmean.csv")
+df = pd.read_csv("https://github.com/mlmstdt/Mapping-radio/raw/main/script/audio_featuresmean.csv")
 df
 
 
@@ -359,7 +359,7 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 from sklearn.metrics import pairwise_distances
 import re
 
-csv_file_url = 'https://github.com/mlmstdt/Mapping-radio/raw/main/audio_featuresmean.csv'
+csv_file_url = 'https://github.com/mlmstdt/Mapping-radio/raw/main/script/audio_featuresmean.csv'
 
 # Custom sorting function
 def custom_sort_key(name):
@@ -440,7 +440,7 @@ Hermeneutics 11
 get_ipython().run_line_magic('matplotlib', 'inline')
 import re
 
-csv_file_url = 'https://github.com/mlmstdt/Mapping-radio/raw/main/audio_featuresmean.csv'
+csv_file_url = 'https://github.com/mlmstdt/Mapping-radio/raw/main/script/audio_featuresmean.csv'
 
 # Custom sorting function
 def custom_sort_key(name):
